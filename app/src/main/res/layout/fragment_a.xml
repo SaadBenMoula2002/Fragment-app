@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    tools:context=".FragmentA">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+            <EditText
+                android:id="@+id/inMessage"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_above="@+id/btnPassData"
+                android:layout_margin="16dp"
+                android:hint="Saisir ici" />
+            <Button
+                android:id="@+id/btnPassData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="TRANSMETTRE LES DONNÉES AU FRAGMENT 2" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
